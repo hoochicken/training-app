@@ -3,6 +3,7 @@ require_once 'php/ContentControllerInterface.php';
 require_once 'php/lib/AltoRouter-master/AltoRouter.php';
 require_once 'php/ParameterBag.php';
 require_once 'php/Routing.php';
+require_once 'vendor/autoload.php';
 
 $router = new AltoRouter();
 

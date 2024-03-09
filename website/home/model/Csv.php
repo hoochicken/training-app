@@ -1,11 +1,11 @@
 <?php
 class Csv
 {
-    private $csv = '';
-    private $rowAllRaw = [];
-    private $rowAll = [];
-    private $delimiter = '';
-    private $rowDelimiter = "\n";
+    private string $csv = '';
+    private array $rowAllRaw = [];
+    private array $rowAll = [];
+    private string $delimiter = '';
+    private string $rowDelimiter = "\n";
 
     /**
      * Vocabulary constructor.
