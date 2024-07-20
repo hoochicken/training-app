@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="align-middle name">{{technique.name}}</div>
+    <div class="align-middle name pt-4 pb-4">{{technique.name}}</div>
     <img v-if="technique.image" src="technique.image" alt="technique.name"/>
   </div>
 </template>
