@@ -29,28 +29,28 @@ export default {
     counter: {},
     conclusion: {},
     attacks: [
-      {name:'Gerader Fauststoss'},
-      {name:'Haken'},
-      {name:'Frontkick oder Sidekick'},
-      {name:'Würgen'},
-      {name:'Griff zum Handgelenk'},
-      {name:'Highkick'}
+      {name:'Gerader Fauststoss', image:1},
+      {name:'Haken', image:1},
+      {name:'Frontkick oder Sidekick', image:1},
+      {name:'Würgen', image:1},
+      {name:'Griff zum Handgelenk', image:1},
+      {name:'Highkick', image:1}
     ],
     counters: [
-      {name:'Hüftwurf'},
-      {name:'Eckenwurf'},
-      {name:'Beinstellen'},
-      {name:'Reisballenwurf'},
-      {name:'Kleine Innensichel'},
-      {name:'Schwerthandwurf'}
+      {name:'Hüftwurf', image:1},
+      {name:'Eckenwurf', image:1},
+      {name:'Beinstellen', image:1},
+      {name:'Reisballenwurf', image:1},
+      {name:'Kleine Innensichel', image:1},
+      {name:'Schwerthandwurf', image:1}
     ],
     conclusions: [
-      {name:'Kreuzfesselgriff'},
-      {name:'Kreuzposition mit Kimura'},
-      {name:'Kavaliersgriff'},
-      {name:'Armstreckhebel (Rückenlage)'},
-      {name:'Armstreckhebel (Bauchlage)'},
-      {name:'Fingerhebel'}
+      {name:'Kreuzfesselgriff', image:1},
+      {name:'Kreuzposition mit Kimura', image:1},
+      {name:'Kavaliersgriff', image:1},
+      {name:'Armstreckhebel (Rückenlage)', image:1},
+      {name:'Armstreckhebel (Bauchlage)', image:1},
+      {name:'Fingerhebel', image:1}
     ],
     errored: false,
     isLoading: true

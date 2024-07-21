@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/vueapp/',
+  base: '/training-app/',
   // base: 'https://hoochicken.github.io/vueapp/',
   server: {
     cors: true,
