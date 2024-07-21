@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="align-middle name pt-4 pb-4 mb-4">{{technique.name}}</div>
-    <img v-if="technique.image" :src="'src/assets/dice/' + technique.image + '.png'" :alt="technique.name"/>
+    <img v-if="technique.image" :src="'assets/images/dice/' + technique.image + '.png'" :alt="technique.name"/>
   </div>
 </template>
 
