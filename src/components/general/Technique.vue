@@ -1,7 +1,9 @@
 <template>
   <div>
-    <div class="align-middle name pt-4 pb-4 mb-4">{{technique.name}}</div>
-    <img v-if="technique.image" :src="'assets/images/dice/' + technique.image + '.png'" :alt="technique.name"/>
+    <div class="align-middle name p-lg-2 pt-4 pb-4 mb-4">
+      <img v-if="technique.image" :src="'src/assets/images/dice/' + technique.image + '.png'" :alt="technique.name"/>
+      {{technique.name}}
+    </div>
   </div>
 </template>
 
@@ -27,6 +29,6 @@ export default {
 </script>
 
 <style scoped>
-.name {font-size:1.5rem;text-align: center;color:white;background: #282828;}
-img {width:100%;}
+.name {font-size:1.5rem;color:white;background: #282828;}
+img {width:20%;}
 </style>

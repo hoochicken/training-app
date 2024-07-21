@@ -29,11 +29,11 @@ export default {
     counter: {},
     conclusion: {},
     attacks: [
-      {name:'Gerader Fauststoss', image:1},
+      {name:'Gerade Faust', image:1},
       {name:'Haken', image:2},
-      {name:'Frontkick oder Sidekick', image:3},
+      {name:'Frontkick', image:3},
       {name:'Würgen', image:4},
-      {name:'Griff zum Handgelenk', image:5},
+      {name:'Griff.z.Handg.', image:5},
       {name:'Highkick', image:6}
     ],
     counters: [
@@ -41,21 +41,22 @@ export default {
       {name:'Eckenwurf', image:2},
       {name:'Beinstellen', image:3},
       {name:'Reisballenwurf', image:4},
-      {name:'Kleine Innensichel', image:5},
+      {name:'Kl.Innensichel', image:5},
       {name:'Schwerthandwurf', image:6}
     ],
     conclusions: [
       {name:'Kreuzfesselgriff', image:1},
-      {name:'Kreuzposition mit Kimura', image:2},
+      {name:'Kreuzpos.m.Kim.', image:2},
       {name:'Kavaliersgriff', image:3},
-      {name:'Armstreckhebel (Rückenlage)', image:4},
-      {name:'Armstreckhebel (Bauchlage)', image:5},
+      {name:'Armstrckh.(Rück)', image:4},
+      {name:'Armstrckh.(Bauch)', image:5},
       {name:'Fingerhebel', image:6}
     ],
     errored: false,
     isLoading: true
   }),
   mounted: function () {
+    this.setTechnique()
   },
   methods: {
     setTechnique() {
@@ -64,7 +65,7 @@ export default {
       this.conclusion = this.getRandomElementFromArray(this.conclusions)
     },
     getRandomElementFromArray(items) {
-      return items[Math.floor(Math.random() * items.length)];
+      return items[Math.floor(Math.random() * items.length)]
     }
   }
 }
