@@ -1,4 +1,3 @@
-// import axios from './plugins/axios'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -17,8 +16,8 @@ const app = createApp(App)
 
 // vue app
 // but we're using vite here ;-)
-let standalone = true
-if (standalone) {
+let standalone = `${import.meta.env.VITE_API_STANDALONE}`
+if (!standalone) {
   axios.defaults.baseURL = `${import.meta.env.VITE_API_HOST}`
   // axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
   app.axios = axios
