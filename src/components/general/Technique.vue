@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="align-middle name p-lg-2 pt-4 pb-4 mb-4">
       <img v-if="technique.image" :src="'src/assets/images/dice/' + technique.image + '.png'" :alt="technique.name"/>
       {{technique.name}}
