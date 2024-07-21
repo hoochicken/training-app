@@ -1,6 +1,6 @@
 <template>
   <div class="training">
-    <MDBBtn style="z-index:1000" class="btn btn-primary fa-pull-right" v-on:click="setTechnique">Press</MDBBtn>
+    <button style="z-index:1000" class="btn btn-primary fa-pull-right" v-on:click="setTechnique">Nächste Technik!!!</button>
     <h1>Triple Technique</h1>
     <div class="container">
       <div class="row">
@@ -30,27 +30,27 @@ export default {
     conclusion: {},
     attacks: [
       {name:'Gerader Fauststoss', image:1},
-      {name:'Haken', image:1},
-      {name:'Frontkick oder Sidekick', image:1},
-      {name:'Würgen', image:1},
-      {name:'Griff zum Handgelenk', image:1},
-      {name:'Highkick', image:1}
+      {name:'Haken', image:2},
+      {name:'Frontkick oder Sidekick', image:3},
+      {name:'Würgen', image:4},
+      {name:'Griff zum Handgelenk', image:5},
+      {name:'Highkick', image:6}
     ],
     counters: [
       {name:'Hüftwurf', image:1},
-      {name:'Eckenwurf', image:1},
-      {name:'Beinstellen', image:1},
-      {name:'Reisballenwurf', image:1},
-      {name:'Kleine Innensichel', image:1},
-      {name:'Schwerthandwurf', image:1}
+      {name:'Eckenwurf', image:2},
+      {name:'Beinstellen', image:3},
+      {name:'Reisballenwurf', image:4},
+      {name:'Kleine Innensichel', image:5},
+      {name:'Schwerthandwurf', image:6}
     ],
     conclusions: [
       {name:'Kreuzfesselgriff', image:1},
-      {name:'Kreuzposition mit Kimura', image:1},
-      {name:'Kavaliersgriff', image:1},
-      {name:'Armstreckhebel (Rückenlage)', image:1},
-      {name:'Armstreckhebel (Bauchlage)', image:1},
-      {name:'Fingerhebel', image:1}
+      {name:'Kreuzposition mit Kimura', image:2},
+      {name:'Kavaliersgriff', image:3},
+      {name:'Armstreckhebel (Rückenlage)', image:4},
+      {name:'Armstreckhebel (Bauchlage)', image:5},
+      {name:'Fingerhebel', image:6}
     ],
     errored: false,
     isLoading: true

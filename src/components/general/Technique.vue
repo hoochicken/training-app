@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="align-middle name pt-4 pb-4">{{technique.name}}</div>
-    <img v-if="technique.image" :src="technique.image" :alt="technique.name"/>
+    <div class="align-middle name pt-4 pb-4 mb-4">{{technique.name}}</div>
+    <img v-if="technique.image" :src="'src/assets/dice/' + technique.image + '.png'" :alt="technique.name"/>
   </div>
 </template>
 
 <script>
-
+import { reactive, computed } from 'vue'
 export default {
   name: "Technique",
   props: ['technique'],
@@ -15,6 +15,8 @@ export default {
   }),
   mounted: function() {
     // this.initiateTechnique();
+  },
+  computed: {
   },
   methods: {
     async initiateTechnique() {
@@ -26,4 +28,5 @@ export default {
 
 <style scoped>
 .name {font-size:1.5rem;text-align: center;color:white;background: #282828;}
+img {width:100%;}
 </style>
