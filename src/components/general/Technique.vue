@@ -32,6 +32,6 @@ export default {
 
 <style scoped>
 .name {font-size:1.5rem;color:white;background: #282828;}
-.labely {width:100%;text-align: center;}
+.labely {width:100%;text-align: right;font-size:1rem;}
 img {width:20%;}
 </style>
