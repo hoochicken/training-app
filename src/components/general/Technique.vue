@@ -2,7 +2,7 @@
   <div>
     <div class="align-middle name p-2 pt-4 pb-4 mb-4">
       <div class="labely">{{label}}</div>
-      <img v-if="technique.image" :src="'/assets/images/dice/' + technique.image + '.png'" :alt="technique.image"/>
+      <img v-if="technique.image" :src="'assets/images/dice/' + technique.image + '.png'" :alt="technique.image"/>
       {{technique.name}}
     </div>
   </div>
