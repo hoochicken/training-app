@@ -1,8 +1,8 @@
 <template>
   <div>
-
-    <div class="align-middle name p-lg-2 pt-4 pb-4 mb-4">
-      <img v-if="technique.image" :src="'@/assets/images/dice/' + technique.image + '.png'" :alt="technique.name"/>
+    <div class="align-middle name p-2 pt-4 pb-4 mb-4">
+      <div class="labely">{{label}}</div>
+      <img v-if="technique.image" :src="'/assets/images/dice/' + technique.image + '.png'" :alt="technique.image"/>
       {{technique.name}}
     </div>
   </div>
@@ -12,7 +12,7 @@
 import { reactive, computed } from 'vue'
 export default {
   name: "Technique",
-  props: ['technique'],
+  props: ['technique', 'label'],
   data: () => ( {
     isLoading: false
   }),
@@ -28,8 +28,10 @@ export default {
   }
 }
 </script>
+<!--https://medium.com/@andrewmasonmedia/how-to-use-images-with-vite-and-vue-937307a150c0-->
 
 <style scoped>
 .name {font-size:1.5rem;color:white;background: #282828;}
+.labely {width:100%;text-align: center;}
 img {width:20%;}
 </style>

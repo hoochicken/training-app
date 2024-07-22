@@ -5,13 +5,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md">
-          <technique :technique="attack"/>
+          <technique :label="'Angriff'" :technique="attack"/>
         </div>
         <div class="col-md">
-          <technique :technique="counter"/>
+          <technique :label="'Technik'" :technique="counter"/>
         </div>
         <div class="col-md">
-          <technique :technique="conclusion"/>
+          <technique :label="'Abschluss'" :technique="conclusion"/>
         </div>
       </div>
     </div>
