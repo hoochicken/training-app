@@ -14,16 +14,28 @@
           <technique :label="'Abschluss'" :technique="conclusion"/>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md">
+          <technique-legend :title="'Angriff'" :techniques="attacks" />
+        </div>
+        <div class="col-md">
+          <technique-legend :title="'Technik'" :techniques="counters" />
+        </div>
+        <div class="col-md">
+          <technique-legend :title="'Abschluss'" :techniques="conclusions" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Technique from '../components/general/Technique';
+import TechniqueLegend from "../components/general/TechniqueLegend";
 
 export default {
   name: 'Triplet',
-  components: {Technique},
+  components: {TechniqueLegend, Technique},
   data: () => ({
     attack: {},
     counter: {},
