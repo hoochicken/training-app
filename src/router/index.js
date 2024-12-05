@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView'
+import LessonView from '../views/LessonView'
+import DrillsView from '../views/DrillsView'
 import DemonicItem from '../components/demo/DemonicItem'
 // import DemonicItem from '../components/demo/DemonicItem'
 const router = createRouter({
@@ -14,6 +16,16 @@ const router = createRouter({
       path: '/home',
       name: 'home2',
       component: HomeView
+    },
+    {
+      path: '/lesson',
+      name: 'lesson',
+      component: LessonView
+    },
+    {
+      path: '/drills',
+      name: 'drills',
+      component: DrillsView
     },
     {
       path: '/about',

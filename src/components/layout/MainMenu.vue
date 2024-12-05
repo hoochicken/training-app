@@ -19,6 +19,14 @@ import { MDBListGroup, MDBListGroupItem, MDBModal, MDBModalHeader, MDBModalBody,
             <RouterLink to="/word">Fingeralphabet</RouterLink>
           </m-d-b-list-group-item-->
           <m-d-b-list-group-item :class="'d-flex list-group-item'" @click="closeNavigation()">
+            <menu-icon :icon-name="'user-secret'"></menu-icon>
+            <RouterLink to="/lesson">Unterrichtseinheit</RouterLink>
+          </m-d-b-list-group-item>
+          <m-d-b-list-group-item :class="'d-flex list-group-item'" @click="closeNavigation()">
+            <menu-icon :icon-name="'clock'"></menu-icon>
+            <RouterLink to="/drills">DrillsView</RouterLink>
+          </m-d-b-list-group-item>
+          <m-d-b-list-group-item :class="'d-flex list-group-item'" @click="closeNavigation()">
             <menu-icon :icon-name="'chess-pawn'"></menu-icon>
             <RouterLink to="/about">Über uns</RouterLink>
           </m-d-b-list-group-item>
