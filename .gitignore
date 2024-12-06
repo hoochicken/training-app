@@ -12,6 +12,7 @@ node_modules
 dist-ssr
 coverage
 *.local
+_raw
 
 /cypress/videos/
 /cypress/screenshots/
