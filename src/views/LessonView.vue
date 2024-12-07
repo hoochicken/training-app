@@ -13,19 +13,15 @@
 <script>
 
 import LessonPart from "@/components/lessons/LessonPart.vue";
+import DrillData from "./../data/drills.json"
+import LessonParts from "./../data/lesson-parts.json"
 
 export default {
   name: 'LessonView',
   components: {LessonPart},
   data: () => ({
-    lessonParts: [
-      {minutes:15, title:'Einwärmen', description:'(1.) einwärmen - (2.) Fallschule - (3.) Spiel'},
-      {minutes:15, title:'Drills', description:'verschiedene Drills'},
-      {minutes:15, title:'Technik I', description:'Konkrete Kombination, methodische Übungsreihe'},
-      {minutes:15, title:'Technik II', description:'Konkrete Kombination, methodische Übungsreihe'},
-      {minutes:15, title:'Anwendung', description:'Randori / SV-Drills / SV / Sparring'},
-      {minutes:15, title:'[Pufferzeit]', description:'z. B. für Erklärungen, Fragen etc.'},
-    ],
+    lessonParts: LessonParts,
+    drills: DrillData,
     errored: false,
     isLoading: true
   })
