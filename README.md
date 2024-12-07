@@ -1,5 +1,8 @@
 # app
 
+* https://hoochicken.github.io/training-app/
+* http://localhost:8090/training-app
+
 ## Settings
 
 ~~~shell

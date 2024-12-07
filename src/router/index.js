@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView'
 import LessonView from '../views/LessonView'
 import DrillsView from '../views/DrillsView'
+import BodenkampfView from '../views/BodenkampfView'
 import DemonicItem from '../components/demo/DemonicItem'
 // import DemonicItem from '../components/demo/DemonicItem'
 const router = createRouter({
@@ -10,12 +11,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/TechniqueTriple')
-    },
-    {
-      path: '/home',
-      name: 'home2',
-      component: HomeView
+      component: LessonView
     },
     {
       path: '/lesson',
@@ -23,9 +19,24 @@ const router = createRouter({
       component: LessonView
     },
     {
+      path: '/home',
+      name: 'home2',
+      component: HomeView
+    },
+    {
+      path: '/bodenkampf',
+      name: 'bodenkampf',
+      component: BodenkampfView
+    },
+    {
       path: '/drills',
       name: 'drills',
       component: DrillsView
+    },
+    {
+      path: '/kombinationen',
+      name: 'kombinationen',
+      component: () => import('../views/TechniqueTriple')
     },
     {
       path: '/about',
