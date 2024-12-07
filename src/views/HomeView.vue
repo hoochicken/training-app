@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
+import MainMenu from "@/components/layout/MainMenu.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <MainMenu></MainMenu>
   </main>
 </template>

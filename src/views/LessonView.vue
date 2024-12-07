@@ -2,18 +2,20 @@
   <div class="training">
     <button style="z-index:1000" class="btn btn-primary fa-pull-right" v-on:click="initAll()">Neues Training erstellen</button>
     <h1>Triple Technique</h1>
+    <!--timer minutes="0.5"></timer-->
     <div class="container">
       <lesson-part title="Einwärmen" minutes="15" :subsets="subsetsWarmup"></lesson-part>
       <lesson-part title="Drills" minutes="15" :subsets="subsetsDrills"></lesson-part>
       <lesson-part title="Technik I" minutes="15"></lesson-part>
       <lesson-part title="Technik II" minutes="15"></lesson-part>
-      <lesson-part title="Randori / Sparring" minutes="15" :subsets="sparring" description="Schutzausrüstung ist zu tragen. Zahnschutz, Handpolster, Schienbeinschoner"></lesson-part>
+      <lesson-part title="Randori / Sparring" minutes="15" :subsets="subsetsSparring" description="Schutzausrüstung ist zu tragen. Zahnschutz, Handpolster, Schienbeinschoner"></lesson-part>
     </div>
   </div>
 </template>
 
 <script>
 
+// import Timer from "@/components/general/Timer.vue";
 import LessonPart from "@/components/lessons/LessonPart.vue";
 import DrillData from "./../data/drills.json"
 import SoloDrillData from "./../data/drills-solo.json"
@@ -34,6 +36,7 @@ export default {
     sparring: Sparring,
     subsetsWarmup: [],
     subsetsDrills: [],
+    subsetsSparring: [],
     errored: false,
     isLoading: true
   }),
@@ -61,7 +64,7 @@ export default {
     initSparring() {
       let sparring = this.getRandomElementsFromArray(this.sparring, 3)
       // drills[0].minutes = drills[1].minutes = drills[2].minutes = 5
-      this.subsetsDrills = sparring
+      this.subsetsSparring = sparring
     },
     getRandomElementsFromArray(anArray, numberOfElements = 1) {
       anArray = this.shuffleArray(anArray)
@@ -81,7 +84,7 @@ export default {
 <style scoped>
 .container > div {
   border-left: solid #e8cd7f 20px;
-  border-top: solid #e8cd7f 20px;
+  /* border-top: solid #e8cd7f 20px;*/
 }
 
 .container > div:nth-child(2) {
@@ -106,7 +109,16 @@ export default {
 
 .container > div:nth-child(6) {
   border-left-color: #b5b5b5;
-  border-left-color: #b5b5b5;
+  border-top-color: #b5b5b5;
   background: #dcdcdc;
 }
+</style>
+
+<style>
+.container > div:nth-child(1) h2 {background: #e8cd7f;}
+.container > div:nth-child(2) h2 {background: #e8ae7f;}
+.container > div:nth-child(3) h2 {background: #e87f7f;}
+.container > div:nth-child(4) h2 {background: #e87fbe;}
+.container > div:nth-child(5) h2 {background: #ce7fe8;}
+.container > div:nth-child(6) h2 {background: #b5b5b5;}
 </style>

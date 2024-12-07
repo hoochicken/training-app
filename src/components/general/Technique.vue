@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { reactive, computed } from 'vue'
+
 export default {
   name: "Technique",
   props: ['technique', 'label'],

@@ -8,7 +8,7 @@
     <header>
       <img src="/logo.png">
       <div class="position-absolute top-0 end-0">
-        <MainMenu></MainMenu>
+       <MainMenu></MainMenu>
       </div>
     </header>
     <div class="d-grid">
@@ -21,6 +21,7 @@
 </template>
 <script>
 import MainMenu from "@/components/layout/MainMenu.vue";
+// import MainMenuModal from "@/components/layout/MainMenuModal.vue";
 export default {
   name: 'App',
   components:[MainMenu],

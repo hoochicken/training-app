@@ -5,7 +5,7 @@ import 'mdb-vue-ui-kit/css/mdb.min.css'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret, faCake, faList, faChessPawn, faClose, faClock } from '@fortawesome/free-solid-svg-icons'
+import { faUserSecret, faCake, faList, faChessPawn, faClose, faClock, faUsersCog, faHandFist, faHand, faPeopleGroup } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Vue3ChartJs from '@j-t-mcc/vue3-chartjs'
 // import CircleSpin from 'vue-loading-spinner/src/components/Circle.vue'
@@ -26,7 +26,7 @@ if (!standalone) {
 
 app.use(router)
 
-library.add(faUserSecret, faCake, faList, faChessPawn, faClose, faClock)
+library.add(faUserSecret, faCake, faList, faChessPawn, faClose, faClock, faUsersCog, faHandFist, faHand, faPeopleGroup)
 
 app.component('vue3-chart-js', Vue3ChartJs)
 app.component('font-awesome-icon', FontAwesomeIcon)
