@@ -1,11 +1,15 @@
 <template>
   <div class="container pt-3 pb-1 mb-4">
-    <div class="row">
-      <h2>{{title}} ('{{minutes}})</h2>
-      <div class="col-md description">
-        {{description}}
+    <h2>{{title}} ('{{minutes}})</h2>
+      <div v-if="description" class="description">
+        {{ description }}
       </div>
-    </div>
+      <div v-if="subsets" class="subsets">
+        <div v-for="item in subsets" class="subset">
+          <strong>{{ item.title }}</strong> <span v-if="item.minutes">('{{ item.minutes }})</span><br />
+          <p>{{ item.description }}</p>
+        </div>
+      </div>
   </div>
 </template>
 
@@ -13,7 +17,7 @@
 
 export default {
   name: "LessonPart",
-  props: ['minutes', 'title', 'description'],
+  props: ['minutes', 'title', 'description', "subsets"],
   data: () => ({
     isLoading: false
   })

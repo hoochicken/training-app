@@ -1,20 +1,38 @@
 [
   {
-    "title": "Ein Spiel",
+    "title": "Reis-Säckchen",
     "category": "Game",
     "video": "",
-    "description": ""
+    "description": "2er-Gruppen, jede 2 Reis-Säckchen in verschiedener Farbe; der Werfer kündiogt die Farbe an, die gefangen werden soll"
   },
   {
-    "title": "Ein anderes Spiel",
+    "title": "Gänsespiel",
     "category": "Game",
     "video": "",
-    "description": ""
+    "description": "Staffellauf, mehrere Gruppen, alle an einer Linie, würfeln, während einer zum Spielbrett läuft und die Gans zieht, nachen die anderen leichte Leibesübungen, Kniebeugen, Burpies etc."
   },
   {
-    "title": "Nochn Spiel",
+    "title": "Tik Tak Tok",
     "category": "Game",
     "video": "",
-    "description": ""
+    "description": "Staffellauf, 3er- oder 4er-Gruppen, mit 2x3 Reissäckchen verschiedener Farben am anderen Ende der Halle Tik-Tak-Tok spielen"
+  },
+  {
+    "title": "Schulterklatschen",
+    "category": "Game",
+    "video": "",
+    "description": "pArtnerweise, versuchen sich gegenseitig auf die Schulter zu klatschen, dann Oberschenkel. dann beides, auf Augen aufpassen ;-)"
+  },
+  {
+    "title": "Schwarz-weiss",
+    "category": "Game",
+    "video": "",
+    "description": "Partnerweise zusammen, in der mitt der Halle, sodass beide Partner Platz zum Sprinten in jeweils ihr Richtung haben, eine Seite ist 'weiss', die andere 'schwarz', 'weiss 1' heisst weiss ist Fänger, 'weiss 2' heisst weiss ist Flüchtender, 'schwarz 1' mach schwarz zum Fänger, allmählich komplexer gesttalen, 'weiss 5' => ungrade = Fänger, gerade = Flüchtiger, 'schwarz 4+7' etc."
+  },
+  {
+    "title": "Knieläufer-Fangi",
+    "category": "Game",
+    "video": "",
+    "description": "alle auf den Knien, ein ode mehrere Fänger"
   }
 ]

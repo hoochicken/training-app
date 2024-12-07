@@ -1,16 +1,33 @@
 [
-
   {
-    "title": "Bedingtes Sparring",
+    "title": "Bedingtes Sparring - gerade",
     "category": "Sparring Bedingt",
     "video": "",
     "description": ""
   },
   {
+    "title": "Bedingtes Sparring - rund",
+    "category": "Sparring Bedingt",
+    "video": "",
+    "description": "nur runde Angriffe sind erlaubt, Schwinger, Mawashi-geri, Low-kick"
+  },
+  {
+    "title": "Bedingtes Sparring - Handangriffe",
+    "category": "Sparring Bedingt",
+    "video": "",
+    "description": "Angriffe nur mit Armen / Händen erlaubt"
+  },
+  {
+    "title": "Bedingtes Sparring - Kicks",
+    "category": "Sparring Bedingt",
+    "video": "",
+    "description": "Angriff nur mit Kicks"
+  },
+  {
     "title": "Freies Sparring oder Randori",
     "category": "Sparring",
     "video": "",
-    "description": "Randori im Stand, mit Jiu-Techniken, Schützer anziehen"
+    "description": "Randori im Stand, mit Jiu-Techniken"
   },
   {
     "title": "Freies Rollen",
