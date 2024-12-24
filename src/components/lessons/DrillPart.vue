@@ -5,18 +5,23 @@
         {{description}}
       </div>
       <div class="col-md video">
-        <video width="320" height="240" controls>
+        {{ video }}
+        <video-player :pathAndFileName="video"></video-player>
+        <!--video width="320" height="240" controls>
           <source :src="'assets/videos/' + video" type="video/mp4">
           Your browser does not support the video tag.
-        </video>
+        </video-->
       </div>
     </div>
 </template>
 
 <script>
 
+import VideoPlayer from "@/components/general/VideoPlayer.vue";
+
 export default {
   name: "DrillPart",
+  components: {VideoPlayer},
   props: ['title', 'video', 'description', 'category'],
   data: () => ({
     isLoading: false
