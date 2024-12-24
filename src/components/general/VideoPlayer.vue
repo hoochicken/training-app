@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <video v-if="path" width="320" height="240" controls>
+  <video v-if="path" controls>
     <source :src="'assets/videos/' + path" type="video/mp4">
     Your browser does not support the video tag.
   </video>
@@ -18,5 +18,5 @@ export default {
 </script>
 
 <style scoped>
-
+  video { width:320px;height:240px;}
 </style>
