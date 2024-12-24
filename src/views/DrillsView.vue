@@ -3,11 +3,9 @@
     <div class="button-container">
       <!--button style="z-index:1000" class="btn btn-primary fa-pull-right" v-on:click="randomDrill()">Zufalls-Drill</button-->
       <button style="z-index:1000" class="btn all" v-on:click="categoryToDisplay = 'all'">Alle</button>
-      <button style="z-index:1000" class="btn hebel-flow" v-on:click="categoryToDisplay = 'hebel-flow'">Hebel-Flow
-      </button>
+      <button style="z-index:1000" class="btn hebel-flow" v-on:click="categoryToDisplay = 'hebel-flow'">Hebel-Flow</button>
       <button style="z-index:1000" class="btn atemi" v-on:click="categoryToDisplay = 'atemi'">Atemi</button>
-      <button style="z-index:1000" class="btn bodenkampf" v-on:click="categoryToDisplay = 'bodenkampf'">Bodenkampf
-      </button>
+      <button style="z-index:1000" class="btn bodenkampf" v-on:click="categoryToDisplay = 'bodenkampf'">Bodenkampf</button>
       <button style="z-index:1000" class="btn wurf" v-on:click="categoryToDisplay = 'wurf'">Würfe</button>
       <button style="z-index:1000" class="btn waffen" v-on:click="categoryToDisplay = 'waffen'">Waffen</button>
       <button style="z-index:1000" class="btn randori" v-on:click="categoryToDisplay = 'randori'">Randori</button>
