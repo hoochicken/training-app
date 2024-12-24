@@ -2,9 +2,9 @@
   <div class="lesson">
     <button style="z-index:1000" class="btn btn-primary fa-pull-right" v-on:click="initAll()">Neues Training erstellen
     </button>
-    <h1>Unterrichtseinheit</h1>
+    <h1 class="p-4 pt-2 pb-2">Unterrichtseinheit</h1>
     <!--timer minutes="0.5"></timer-->
-    <div class="container">
+    <div class="container p-sm-0 m-0">
       <lesson-part title="Einwärmen" minutes="15" :subsets="subsetsWarmup"></lesson-part>
       <lesson-part title="Drills" minutes="15" :subsets="subsetsDrills"></lesson-part>
       <lesson-part title="Technik I" minutes="15"></lesson-part>
@@ -84,6 +84,9 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 100%;
+}
 .container > div {
   border-left: solid #e8cd7f 20px;
   /* border-top: solid #e8cd7f 20px;*/

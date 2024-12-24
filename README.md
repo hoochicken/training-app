@@ -70,7 +70,7 @@ npm run build
 
 # force git to push dis folder (which is usually ignored) 
 git add dist -f
-git commit "adding dist"
+git commit -m "adding dist"
 
 # push to subtree gh-pages 
 # which deploys it automatically to url defined in vite.config.js base

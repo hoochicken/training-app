@@ -5,7 +5,7 @@
 
 <template>
   <div class="wrappy">
-    <header>
+    <header class="p-4">
       <img src="/logo.png">
       <div class="position-absolute top-0 end-0">
        <MainMenu></MainMenu>
@@ -13,7 +13,6 @@
     </header>
     <div class="d-grid">
       <div class="wrapper">
-        <!--HelloWorld msg="You did it!" /-->
         <RouterView />
       </div>
     </div>
